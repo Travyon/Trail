@@ -10,13 +10,13 @@ export default function App() {
     
       <View style={styles.titleContainer}>
         <ImageBackground 
-          source={require('./assets/Images/Trail-Background.jpeg')}
+          source={require('./assets/Images/Trailback.jpeg')}
           style={styles.image}
         />
 
         <View style={styles.titles}>
          <Text style={styles.title}>Trail</Text>
-         <Text style={styles.subtitle}>Your path to financial freedom</Text>
+         <Text style={styles.subtitle}>Your path to financial responsibility</Text>
         </View>
 
 
