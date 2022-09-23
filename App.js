@@ -10,7 +10,7 @@ import StyledButton from './components/StyledButton';
 export default function App() {
   return (
     <View style={styles.container}>
-      <StatusBar style = "auto"/>
+      <StatusBar style = "light"/>
       <LoginScreen/>
       
     </View>

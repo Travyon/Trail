@@ -12,11 +12,13 @@ const LoginScreen = (props) =>{
           />
   
           <View style={styles.titles}>
+            <Text style={styles.subtitle}></Text>
             <Text style={styles.title}>Trail</Text>
-            <Text style={styles.subtitle}>Your path to financial responsibility</Text>
           </View>
-
-          <StyledButton/>
+          
+          <StyledButton 
+          //Parent component sending to child component
+          type="primary"/> 
   
         </View>
     );
