@@ -1,6 +1,7 @@
 import React from "react";
 import {View, Text, ImageBackground} from 'react-native';
 import styles from './styles';
+import StyledButton from '../StyledButton'
 
 const LoginScreen = (props) =>{
     return(
@@ -14,6 +15,8 @@ const LoginScreen = (props) =>{
             <Text style={styles.title}>Trail</Text>
             <Text style={styles.subtitle}>Your path to financial responsibility</Text>
           </View>
+
+          <StyledButton/>
   
         </View>
     );
