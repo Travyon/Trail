@@ -11,7 +11,6 @@ const styles = StyleSheet.create({
     },
 
     button: {
-        backgroundColor: 'white',
         height: 40,
         //aligns to the main axis of direction
         justifyContent: "center",
@@ -23,7 +22,6 @@ const styles = StyleSheet.create({
     },
 
     text: {
-        color: 'black',
         fontSize: 12,
         fontWeight: '500',
         textTransform: "uppercase"

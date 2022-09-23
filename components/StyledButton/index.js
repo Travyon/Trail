@@ -9,18 +9,23 @@ const StyledButton = (props) => {
      * be black, otherwise it will be white
      */
     const backgroundColor = type === 'primary' ? 'black' : 'white';
+    const textColor = type === 'primary' ? 'white' : 'black';
   
 
 
     return(
         <View styles= {styles.container}>
-            <Pressable style={styles.button} 
+            <Pressable style=
+            //Array is used to merge 2 styles together
+            {[styles.button, {backgroundColor: backgroundColor} ]} 
             //function called everytime users press the screen
             onPress={()=> { console.warn('Welcome')}}>
-            
-            <Text style= {styles.text}>Create Account</Text>
+        
+            <Text style= {[styles.text, {color: textColor}]}>Create Account</Text>
 
             </Pressable>
+
+
         </View>
 
 

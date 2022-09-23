@@ -18,7 +18,7 @@ const LoginScreen = (props) =>{
           
           <StyledButton 
           //Parent component sending to child component
-          type="primary"/> 
+          type='secondary'/> 
   
         </View>
     );
