@@ -15,9 +15,10 @@ const styles = StyleSheet.create({
         alignItems: 'center'
     },
     title:{
-        fontSize: '40px',
+        fontSize: '80px',
         fontWeight: '700',
-        color: '#FFFFFF'
+        color: '#FFFFFF',
+        marginTop: 185
     },
     subtitle:{
         fontSize: '16px',
