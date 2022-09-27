@@ -1,7 +1,8 @@
 import React from "react";
-import {View, Text, ImageBackground} from 'react-native';
+import {View, Text, ImageBackground, TextInput} from 'react-native';
 import styles from './styles';
 import StyledButton from '../StyledButton'
+import TextField from "../TextField";
 
 const LoginScreen = (props) =>{
     return(
@@ -18,7 +19,15 @@ const LoginScreen = (props) =>{
           
           <StyledButton 
           //Parent component sending to child component
-          type='secondary'/> 
+          type='secondary' 
+          content={"Create Account"}
+          onPress={()=> {
+            console.warn("Create Account was pressed");
+          }}/>
+
+          <TextField/>
+
+          
   
         </View>
     );
