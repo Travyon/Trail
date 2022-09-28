@@ -3,6 +3,7 @@ import {View, Text, ImageBackground, TextInput} from 'react-native';
 import styles from './styles';
 import StyledButton from '../StyledButton'
 import TextField from "../TextField";
+import HorizontalLine from "../HorizontalLine";
 
 const LoginScreen = (props) =>{
     return(
@@ -25,9 +26,11 @@ const LoginScreen = (props) =>{
             console.warn("Create Account was pressed");
           }}/>
 
-          <TextField/>
+          <TextField
+            type='primary'
+          />
 
-          
+          <HorizontalLine/>
   
         </View>
     );

@@ -5,8 +5,9 @@ const styles = StyleSheet.create({
     input: {
      backgroundColor: "white",
      height: 40,
-     marginTop: 45,
-     borderRadius: 20
+     marginTop: 70,
+     borderRadius: 20,
+     padding: 10
    },
    container: {
      width: '100%',
