@@ -3,17 +3,37 @@ import { StyleSheet } from "react-native";
 const styles = StyleSheet.create({
 
     container:{
-        width: '100%',
-        height: '100%'
+        flexDirection: 'row'
     },
 
-    textRegister:{
-        width: 100,
-        height: 50,
-        marginTop: 100
+    lineView:{
+        backgroundColor: 'white', 
+        height: 3, 
+        flex: 1, 
+        alignSelf: 'center',
+        marginTop: 25
         
+    },
+
+    lineText:{
+        alignSelf:'center', 
+        paddingHorizontal:5, 
+        fontSize: 24,
+        color: 'white',
+        marginTop: 25,
+        fontWeight:'700'
+    },
+
+    lineStyle:{
+        backgroundColor: 'white', 
+        height: 3, 
+        flex: 1, 
+        alignSelf: 'center', 
+        marginTop: 25
     }
 
-})
+
+
+});
 
 export default styles;

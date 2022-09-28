@@ -5,7 +5,7 @@ const styles = StyleSheet.create({
     input: {
      backgroundColor: "white",
      height: 40,
-     marginTop: 70,
+     marginTop: 50,
      borderRadius: 20,
      padding: 10
    },

@@ -1,6 +1,7 @@
 import React from "react";
 import  {Text, Pressable, View} from 'react-native';
 import styles from './styles';
+import HorizontalLine from "../HorizontalLine";
 
 const StyledButton = (props) => {
     const type = props.type;
@@ -24,6 +25,7 @@ const StyledButton = (props) => {
             <Text style= {[styles.text, {color: textColor}]}>Create Account</Text>
 
             </Pressable>
+            <HorizontalLine/>
 
 
         </View>

@@ -10,11 +10,13 @@ const TextField = (props) => {
             <TextInput 
             style={styles.input}
             placeholder={"Username"}
+            autoCapitalize= 'none'
             />
 
             <TextInput 
             style={[styles.input, {marginTop:marginTop}]}
             placeholder={"Password"}
+            autoCapitalize= 'none'
             />
         </View>
     )

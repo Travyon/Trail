@@ -30,8 +30,6 @@ const LoginScreen = (props) =>{
             type='primary'
           />
 
-          <HorizontalLine/>
-  
         </View>
     );
 }
