@@ -1,9 +1,11 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View} from 'react-native';
+import CreateAccount from './components/CreateAccount';
 import HorizontalLine from './components/HorizontalLine';
 import LoginScreen from './components/loginScreen';
 import StyledButton from './components/StyledButton';
+
 
 
 
@@ -13,7 +15,6 @@ export default function App() {
     <View style={styles.container}>
       <StatusBar style = "light"/>
       <LoginScreen/>
-    
       
     </View>
 

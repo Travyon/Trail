@@ -8,7 +8,7 @@ const styles = StyleSheet.create({
 
     lineView:{
         backgroundColor: 'white', 
-        height: 3, 
+        height: 1, 
         flex: 1, 
         alignSelf: 'center',
         marginTop: 25
@@ -21,12 +21,12 @@ const styles = StyleSheet.create({
         fontSize: 24,
         color: 'white',
         marginTop: 25,
-        fontWeight:'700'
+        fontWeight:'400'
     },
 
     lineStyle:{
         backgroundColor: 'white', 
-        height: 3, 
+        height: 1, 
         flex: 1, 
         alignSelf: 'center', 
         marginTop: 25
