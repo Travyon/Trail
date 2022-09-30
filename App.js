@@ -1,26 +1,30 @@
-import { StatusBar } from 'expo-status-bar';
+import { StatusBar } from 'react-native';
 import React from 'react';
 import { StyleSheet, Text, View} from 'react-native';
-import CreateAccount from './components/CreateAccount';
-import HorizontalLine from './components/HorizontalLine';
 import LoginScreen from './components/loginScreen';
-import StyledButton from './components/StyledButton';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
+const Stack = createNativeStackNavigator();
 
-
-
-
-export default function App() {
+function App() {
   return (
-    <View style={styles.container}>
-      <StatusBar style = "light"/>
-      <LoginScreen/>
-      
-    </View>
-
-
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName="Login"
+        screenOptions={{
+          headerShown: false,
+          header: () => null,
+          contentStyle: { backgroundColor: 'white' },
+        }}>
+        <Stack.Screen name="login" component={LoginScreen} />
+      </Stack.Navigator>
+      <StatusBar backgroundColor='white' barStyle='light-content' />
+    </NavigationContainer>
   );
 }
+
+export default App;
+
 
 const styles = StyleSheet.create({
   container: {

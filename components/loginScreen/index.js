@@ -3,7 +3,7 @@ import {View, Text, ImageBackground, TextInput} from 'react-native';
 import styles from './styles';
 import StyledButton from '../StyledButton'
 import TextField from "../TextField";
-import HorizontalLine from "../HorizontalLine";
+
 
 const LoginScreen = (props) =>{
     return(

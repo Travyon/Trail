@@ -3,6 +3,7 @@ import {View, Text} from 'react-native';
 import styles from "./styles";
 
 
+
 const HorizontalLine = () => {
 return(
 <View style={styles.container}>
