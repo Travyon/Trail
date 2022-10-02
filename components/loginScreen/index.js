@@ -1,11 +1,15 @@
 import React from "react";
 import {View, Text, ImageBackground, TextInput} from 'react-native';
 import styles from './styles';
-import StyledButton from '../StyledButton'
 import TextField from "../TextField";
+import StyledButton from "../StyledButton";
+import { useNavigation } from '@react-navigation/native'
+
 
 
 const LoginScreen = (props) =>{
+  const navigation = useNavigation()
+
     return(
         <View style={styles.titleContainer}>
           <ImageBackground 
@@ -17,14 +21,12 @@ const LoginScreen = (props) =>{
             <Text style={styles.subtitle}></Text>
             <Text style={styles.title}>Trail</Text>
           </View>
-          
-          <StyledButton 
+
+          <StyledButton
           //Parent component sending to child component
           type='secondary' 
-          content={"Create Account"}
-          onPress={()=> {
-            console.warn("Create Account was pressed");
-          }}/>
+            content={"Create Account"}
+            onPress={()=> navigation.navigate('Register')}/>
 
           <TextField
             type='primary'

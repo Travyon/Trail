@@ -4,7 +4,8 @@ import styles from './styles';
 import HorizontalLine from "../HorizontalLine";
 
 const StyledButton = (props) => {
-    const type = props.type;
+    const {type, content, onPress} = props;
+
     /**
      * if the type of the background color is primary then the color should 
      * be black, otherwise it will be white
@@ -20,9 +21,9 @@ const StyledButton = (props) => {
             //Array is used to merge 2 styles together
             {[styles.button, {backgroundColor: backgroundColor} ]} 
             //function called everytime users press the screen
-            onPress={()=> { console.warn('Welcome')}}>
+            onPress={()=> onPress()}>
         
-            <Text style= {[styles.text, {color: textColor}]}>Create Account</Text>
+            <Text style= {[styles.text, {color: textColor}]}>{content}</Text>
 
             </Pressable>
             <HorizontalLine/>
