@@ -4,6 +4,8 @@ import styles from './styles';
 import TextField from "../TextField";
 import StyledButton from "../StyledButton";
 import { useNavigation } from '@react-navigation/native'
+import * as SecureStore from 'expo-secure-store';
+import SignIn from "../SignIn";
 
 
 
@@ -31,6 +33,12 @@ const LoginScreen = (props) =>{
           <TextField
             type='primary'
           />
+
+          <SignIn
+          content={"Login"}
+          onPress={()=> navigation.navigate('Login')}
+          />
+          
 
         </View>
     );

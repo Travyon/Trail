@@ -22,7 +22,7 @@ const App = () => {
         <Stack.Screen name="Login" component={LoginScreen}/>
         <Stack.Screen name="Register" component={CreateAccount}/>
       </Stack.Navigator>
-      <StatusBar backgroundColor='white' barStyle='light-content' />
+      <StatusBar backgroundColor='white' barStyle='dark-content' />
     </NavigationContainer>
   );
 }
