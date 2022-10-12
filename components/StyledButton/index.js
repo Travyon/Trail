@@ -26,7 +26,6 @@ const StyledButton = (props) => {
             <Text style= {[styles.text, {color: textColor}]}>{content}</Text>
 
             </Pressable>
-            <HorizontalLine/>
             
 
 

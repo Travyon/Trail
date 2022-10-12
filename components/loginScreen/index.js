@@ -30,9 +30,6 @@ const LoginScreen = (props) =>{
             content={"Register"}
             onPress={()=> navigation.navigate('Register')}/>
 
-          <TextField
-            type='primary'
-          />
           
 
         </View>

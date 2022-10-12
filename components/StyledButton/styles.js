@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         //Determines the button shape
         borderRadius: 20,
-        marginTop: 55
+        marginTop: 200
 
     },
 
