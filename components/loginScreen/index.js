@@ -27,7 +27,7 @@ const LoginScreen = (props) =>{
           <StyledButton
           //Parent component sending to child component
           type='secondary' 
-            content={"Create Account"}
+            content={"Register"}
             onPress={()=> navigation.navigate('Register')}/>
 
           <TextField

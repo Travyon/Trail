@@ -12,6 +12,7 @@ const Stack = createNativeStackNavigator();
 const App = () => {
   return (
     <NavigationContainer>
+      
       <Stack.Navigator initialRouteName="Login"
         screenOptions={{
           headerShown: false,
@@ -21,6 +22,7 @@ const App = () => {
  
         <Stack.Screen name="Login" component={LoginScreen}/>
         <Stack.Screen name="Register" component={CreateAccount}/>
+
       </Stack.Navigator>
       <StatusBar backgroundColor='white' barStyle='dark-content' />
     </NavigationContainer>
