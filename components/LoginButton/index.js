@@ -2,8 +2,7 @@ import React from "react";
 import  {Text, Pressable, View} from 'react-native';
 import styles from './styles';
 
-
-const StyledButton = (props) => {
+const LoginButton = (props) => {
     const {type, content, onPress} = props;
 
     /**
@@ -27,14 +26,10 @@ const StyledButton = (props) => {
 
             </Pressable>
 
-
-            
-
-
         </View>
 
 
     )
 };
 
-export default StyledButton;
+export default LoginButton;

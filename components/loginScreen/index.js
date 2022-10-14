@@ -1,12 +1,9 @@
 import React from "react";
 import {View, Text, ImageBackground, TextInput} from 'react-native';
 import styles from './styles';
-import TextField from "../TextField";
 import StyledButton from "../StyledButton";
 import { useNavigation } from '@react-navigation/native'
-
-
-
+import LoginButton from "../LoginButton";
 
 
 const LoginScreen = (props) =>{
@@ -29,6 +26,12 @@ const LoginScreen = (props) =>{
           type='secondary' 
             content={"Register"}
             onPress={()=> navigation.navigate('Register')}/>
+          
+          <LoginButton
+          type= 'secondary'
+          content={"Login"}
+          onPress={()=> navigation.navigate('Userlogin')}
+          />
 
           
 
