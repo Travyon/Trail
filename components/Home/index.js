@@ -26,7 +26,7 @@ const Home = (props) =>{
               <TextInput
               style={styles.input}
               onChangeText={formikprops.handleChange('body')}
-              value={formikprops.values.title}
+              value={formikprops.values.body}
               />
               <TextInput
               multiline
