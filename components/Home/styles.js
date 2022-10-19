@@ -36,6 +36,15 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         padding: 10,
         backgroundColor: '#DDDDDD'
+    },
+    input: {
+        borderWidth: 1,
+        borderColor: 'black',
+        fontSize: 18,
+        borderRadius: 3,
+        marginTop: 100,
+        marginRight: 20,
+        marginLeft: 20
     }
       
 

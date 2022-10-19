@@ -1,4 +1,4 @@
-import React, {FC, ReactElement, useState }from "react";
+import React, {useState }from "react";
 import {Pressable, View ,Text, TextInput} from 'react-native';
 import styles from "./styles";
 import { auth } from "../../firebase";
