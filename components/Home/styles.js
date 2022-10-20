@@ -17,34 +17,79 @@ const styles = StyleSheet.create({
     title:{
         fontSize: '50px',
         fontWeight: '200',
-        color: 'black',
+        color: 'white',
         marginTop: 20
-    },
-    picker:{
-        height:50,
-        width:150,
-        marginTop: 8
     },
     question:{
         fontSize: '20px',
-        fontWeight: '200',
-        color: 'black',
-        marginTop: 30
+        fontWeight: '400',
+        color: 'white',
+        marginTop: 40,
+        marginLeft: 20
     },
+    secondquestion:{
+        fontSize: '20px',
+        fontWeight: '400',
+        color: 'white',
+        marginTop: 50,
+        marginLeft: 20
+    },
+    thirdquestion:{
+        fontSize: '20px',
+        fontWeight: '400',
+        color: 'white',
+        marginTop: 60,
+        marginLeft: 20
+    },
+
+
     button:{
-        marginTop: 150,
-        alignItems: 'center',
-        padding: 10,
-        backgroundColor: '#DDDDDD'
+        borderRadius: 10
     },
     input: {
-        borderWidth: 1,
-        borderColor: 'black',
+        borderWidth: 3,
+        borderColor: 'white',
         fontSize: 18,
-        borderRadius: 3,
-        marginTop: 100,
+        borderRadius: 5,
+        marginTop: 20,
         marginRight: 20,
         marginLeft: 20
+    },
+    secondinput: {
+        borderWidth: 3,
+        borderColor: 'white',
+        fontSize: 18,
+        marginTop: 20,
+        marginRight: 20,
+        marginLeft: 20,
+        borderRadius: 5
+    },
+    thirdinput: {
+        borderWidth: 3,
+        borderColor: 'white',
+        fontSize: 18,
+        borderRadius: 5,
+        marginTop: 20,
+        marginRight: 20,
+        marginLeft: 20
+    },
+    
+    submit:{
+        marginTop: 90,
+        alignItems: 'center',
+        padding: 10,
+        backgroundColor: '#DDDDDD',
+        alignSelf: 'center',
+        borderRadius: '10'
+        
+    },
+    image:{
+        width: '100%',
+        height: '100%',
+        resizeMode: 'stretch',
+        position: 'absolute',
+    
+
     }
       
 
