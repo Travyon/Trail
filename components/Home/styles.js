@@ -1,3 +1,4 @@
+import { Center } from "native-base";
 import { StyleSheet } from "react-native";
 
 
@@ -20,77 +21,52 @@ const styles = StyleSheet.create({
         color: 'white',
         marginTop: 20
     },
-    question:{
+    subtitle:{
         fontSize: '20px',
-        fontWeight: '400',
+        fontWeight: '200',
         color: 'white',
-        marginTop: 40,
-        marginLeft: 20
-    },
-    secondquestion:{
-        fontSize: '20px',
-        fontWeight: '400',
-        color: 'white',
-        marginTop: 50,
-        marginLeft: 20
-    },
-    thirdquestion:{
-        fontSize: '20px',
-        fontWeight: '400',
-        color: 'white',
-        marginTop: 60,
-        marginLeft: 20
+        marginTop: 30
     },
 
-
-    button:{
-        borderRadius: 10
-    },
-    input: {
-        borderWidth: 3,
-        borderColor: 'white',
-        fontSize: 18,
-        borderRadius: 5,
-        marginTop: 20,
-        marginRight: 20,
-        marginLeft: 20
-    },
-    secondinput: {
-        borderWidth: 3,
-        borderColor: 'white',
-        fontSize: 18,
-        marginTop: 20,
-        marginRight: 20,
-        marginLeft: 20,
-        borderRadius: 5
-    },
-    thirdinput: {
-        borderWidth: 3,
-        borderColor: 'white',
-        fontSize: 18,
-        borderRadius: 5,
-        marginTop: 20,
-        marginRight: 20,
-        marginLeft: 20
-    },
-    
-    submit:{
-        marginTop: 90,
-        alignItems: 'center',
-        padding: 10,
-        backgroundColor: '#DDDDDD',
-        alignSelf: 'center',
-        borderRadius: '10'
-        
-    },
     image:{
         width: '100%',
         height: '100%',
         resizeMode: 'stretch',
         position: 'absolute',
+
+    },
+    choiceone:{
+        backgroundColor: 'white',
+        marginTop: 30,
+        marginRight: 50,
+        marginLeft: 50,
+        paddingTop: 30,
+        paddingBottom: 30,
+        justifyContent: 'center'
+    },
+    choicetext:{
+      textAlign: 'center',
+      fontSize: 20
+         
+    } ,
+    choicetwo:{
+        backgroundColor: 'white',
+        marginTop: 50,
+        marginRight: 50,
+        marginLeft: 50,
+        paddingTop: 30,
+        paddingBottom: 30,
+        justifyContent: 'center'
+    },
+    secondchoicetext:{
+        textAlign: 'center',
+        fontSize: 20
+    }
+        
     
 
-    }
+
+
       
 
 

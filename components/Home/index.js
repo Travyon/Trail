@@ -1,15 +1,17 @@
-import React, { useState } from "react";
-import {View, Text, Button, TouchableOpacity, TextInput, ScrollView, ImageBackground} from 'react-native';
+import React, { useState, useEffect } from "react";
+import {View, Text, TouchableOpacity, TextInput, ImageBackground} from 'react-native';
 import styles from './styles';
-import {Formik} from 'formik';
+import { Button } from "native-base";
+import { useNavigation } from "@react-navigation/native";
+
 
 
 const Home = (props) =>{
-
-
+  const navigation = useNavigation()
+  
     return(
       
-        
+      
         <View style={styles.titleContainer}>
         <ImageBackground 
             source={require('../../assets/Images/Trailback.jpeg')}
@@ -19,54 +21,20 @@ const Home = (props) =>{
   
           <View style={styles.titles}>
             <Text style={styles.title}>Welcome to Trail</Text>
+            <Text style={styles.subtitle}>Choose your budget method</Text>
           </View>
-      
-          <Formik 
-          initialValues={{ body: '' , secondbody: '', thirdbody:''}}
-          onSubmit={(values)=>{
-            console.log(values);
-          }}
-          >
-          {(formikprops) => (
-            <View>
-              <Text style={styles.question}>How can we make Trail more cost-efficient? </Text>
-              <TextInput
-              multiline
-              style={styles.input}
-              onChangeText={formikprops.handleChange('body')}
-              value={formikprops.values.body}
-              />
 
-              <Text style={styles.secondquestion}>What do you think needs more improvement when it comes to 
-              budgeting apps?</Text>
-              <TextInput
-              multiline
-              style={styles.secondinput}
-              onChangeText={formikprops.handleChange('secondbody')}
-              value={formikprops.values.secondbody}
-              />
 
-              <Text style={styles.thirdquestion}>Would you be interested in using the 50/30/20 and Zero-based budgeting methods in one app?</Text>
-              <TextInput
-              multiline
-              style={styles.thirdinput}
-              onChangeText={formikprops.handleChange('secondbody')}
-              value={formikprops.values.thirdbody}
-              />
-              
-              <TouchableOpacity 
-              title='submit' 
-              //gets the values for title & body
-              onPress={formikprops.handleSubmit}
-              style={styles.button}
-              >
-                <Text style={styles.submit}> Submit</Text>
-              </TouchableOpacity>
-            </View>
-          )}
-          </Formik>
+          <Button style={styles.choiceone} onPress={()=> navigation.navigate('ZeroBudget')}>
+            <Text style={styles.choicetext}> Zero-Based</Text>
+          </Button>
 
-          
+          <Button style={styles.choicetwo} onPress={()=> console.log('It works!')}>
+            <Text style ={styles.secondchoicetext}>50/30/20</Text>
+          </Button>
+        
+
+        
 
         </View>
         
