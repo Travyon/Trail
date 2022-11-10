@@ -8,7 +8,8 @@ import ZeroBudget from './components/ZeroBudget';
 import CreateAccount from './components/CreateAccount';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { NativeBaseProvider } from "native-base";
+import { Provider as PaperProvider } from 'react-native-paper';
+
 
 
 const Stack = createNativeStackNavigator();
@@ -16,7 +17,7 @@ const Stack = createNativeStackNavigator();
 
 const App = () => {
   return (
-    <NativeBaseProvider>
+  <PaperProvider>
     <NavigationContainer>
     
       <Stack.Navigator initialRouteName="Login"
@@ -35,7 +36,8 @@ const App = () => {
       </Stack.Navigator>
       <StatusBar backgroundColor='white' barStyle='dark-content' />
     </NavigationContainer>
-    </NativeBaseProvider>
+    </PaperProvider>
+   
   );
 }
 
