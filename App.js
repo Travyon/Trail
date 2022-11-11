@@ -5,6 +5,7 @@ import LoginScreen from './components/loginScreen';
 import UserLogin from './components/UserLogin';
 import Home from './components/Home';
 import ZeroBudget from './components/ZeroBudget';
+import PortionBudget from './components/PortionBudget';
 import CreateAccount from './components/CreateAccount';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -32,6 +33,7 @@ const App = () => {
         <Stack.Screen name="Userlogin" component={UserLogin}/>
         <Stack.Screen name="Home" component={Home}/>
         <Stack.Screen name="ZeroBudget" component={ZeroBudget} />
+        <Stack.Screen name="PortionBudget" component={PortionBudget}/>
 
       </Stack.Navigator>
       <StatusBar backgroundColor='white' barStyle='dark-content' />

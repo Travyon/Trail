@@ -29,7 +29,7 @@ const Home = (props) =>{
             <Text style={styles.choicetext}> Zero-Based</Text>
           </Button>
 
-          <Button style={styles.choicetwo} mode="elevated" onPress={()=> console.log('It works!')}>
+          <Button style={styles.choicetwo} mode="elevated" onPress={()=> navigation.navigate('PortionBudget')}>
             <Text style ={styles.secondchoicetext}>50/30/20</Text>
           </Button>
         
