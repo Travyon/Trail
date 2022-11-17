@@ -13,7 +13,10 @@ import { Provider as PaperProvider } from 'react-native-paper';
 
 
 
+
+
 const Stack = createNativeStackNavigator();
+
 
 
 const App = () => {
@@ -35,9 +38,12 @@ const App = () => {
         <Stack.Screen name="ZeroBudget" component={ZeroBudget} />
         <Stack.Screen name="PortionBudget" component={PortionBudget}/>
 
+
       </Stack.Navigator>
-      <StatusBar backgroundColor='white' barStyle='dark-content' />
+      <StatusBar backgroundColor='white' barStyle='white-content' />
+    
     </NavigationContainer>
+
     </PaperProvider>
    
   );

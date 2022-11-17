@@ -1,21 +1,43 @@
 import React from "react";
-import {View, ImageBackground, Text} from 'react-native'
+import {View, ImageBackground, Text, Dimensions} from 'react-native'
 import styles from "./styles";
-import { VictoryPie } from "victory";
+import { VictoryPie } from "victory-native";
+import { Surface , List} from "react-native-paper";
 
-const graphicColor = ['#808080', '#FF0000', '#00FF00']
-const wantedGraphicData = [{x: '50%', y: 35}, {x: '30%', y: 90}, {x:'20%', y: 100}]
+
+
 
 const PortionBudget = () =>{
-    
+ 
     return(
-        <View style={styles.image}>
-            <ImageBackground 
-            source={require('../../assets/Images/Trailback.jpeg')}
-            style={styles.image}
-            blurRadius={150}
+        <View style={styles.backcolor}>
+
+            <VictoryPie
+            data={[
+                { x: "50%", y: 50 },
+                { x: "30%", y: 30 },
+                { x: "20%", y: 20 }
+              ]}
+            colorScale={["black", "white", "gray"]}
+            width={375}
+            style={{marginTop: 50}}
             />
 
+            <Surface elevation={5} style={{height: 110, marginTop: 30,marginRight: 0, marginLeft:0, borderRadius: 0, backgroundColor:'black', shadowOpacity: 1, opacity: 10}}>
+                <Text numberOfLines={1} style={{marginRight: 285, fontSize: 25, fontWeight: '700', marginTop: 10, color: 'gold' }}>Income:</Text>
+                <List.Item
+                    titleStyle={{marginTop:-5, color: 'white', fontWeight: '700'}}
+                    descriptionStyle={{marginTop:1, color: 'white'}}
+                    title="AT&T"
+                    description="$150"
+                />
+
+            </Surface>
+       
+
+            
+     
+  
         </View>
     )
 }

@@ -10,12 +10,9 @@ title:{
    fontSize: 30,
    color: 'white'
 },
-image:{
-   width: '100%',
-   height: '100%',
-   resizeMode: 'stretch',
-   position: 'absolute',
-
+backcolor:{
+   height: '45%',
+   backgroundColor: 'gold' 
 }
 
 })
