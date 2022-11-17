@@ -11,7 +11,6 @@ const PortionBudget = () =>{
  
     return(
         <View style={styles.backcolor}>
-
             <VictoryPie
             data={[
                 { x: "50%", y: 50 },
@@ -20,24 +19,29 @@ const PortionBudget = () =>{
               ]}
             colorScale={["black", "white", "gray"]}
             width={375}
-            style={{marginTop: 50}}
             />
 
-            <Surface elevation={5} style={{height: 110, marginTop: 30,marginRight: 0, marginLeft:0, borderRadius: 0, backgroundColor:'black', shadowOpacity: 1, opacity: 10}}>
-                <Text numberOfLines={1} style={{marginRight: 285, fontSize: 25, fontWeight: '700', marginTop: 10, color: 'gold' }}>Income:</Text>
-                <List.Item
-                    titleStyle={{marginTop:-5, color: 'white', fontWeight: '700'}}
-                    descriptionStyle={{marginTop:1, color: 'white'}}
-                    title="AT&T"
-                    description="$150"
-                />
-
+            <Surface elevation={5} style={{height: 60, marginTop: -30,marginRight: 5, marginLeft:5, borderRadius: 10, backgroundColor:'black', shadowOpacity: 0, opacity: 10, paddingTop: 5}}>
+                <Text numberOfLines={1} style={{marginLeft: 25,fontSize: 25, fontWeight: '700', marginTop: 5, color: 'gold' }}>Income: $1,000.00</Text>
             </Surface>
-       
 
-            
-     
-  
+            <List.Accordion title="Need" titleStyle={{color: 'white', fontWeight: '700'}} style={{marginTop: 10, marginRight: 10, marginLeft:10, borderRadius: 10, backgroundColor: 'black'}}>
+                <List.Item title="First item"/>
+                <List.Item title="Second item"/>
+                <List.Item title="Third item"/>
+            </List.Accordion>
+
+            <List.Accordion title="Want" titleStyle={{color: 'white', fontWeight: '700'}} style={{marginTop: 10, marginRight:10, marginLeft:10, borderRadius: 10, backgroundColor: 'black'}}>
+                <List.Item title="First item"/>
+                <List.Item title="Second item"/>
+                <List.Item title="Third item"/>
+            </List.Accordion>
+
+            <List.Accordion title="Save | Debt | Invest" titleStyle={{color: 'white', fontWeight: '700'}} style={{marginTop: 10, marginRight:10, marginLeft:10, borderRadius: 10, backgroundColor: 'black'}}>
+                <List.Item title="First item"/>
+                <List.Item title="Second item"/>
+                <List.Item title="Third item"/>
+            </List.Accordion>
         </View>
     )
 }
