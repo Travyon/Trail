@@ -6,7 +6,8 @@ const styles = StyleSheet.create({
    
     titleContainer:{
         width: '100%',
-        height: '100%'
+        height: '100%',
+        backgroundColor: 'black'
     },
         
     titles: {
@@ -26,10 +27,12 @@ const styles = StyleSheet.create({
     },
       
     image:{
-        width: '100%',
-        height: '100%',
-        resizeMode: 'contain',
-        position: 'absolute'
+        width: '75%',
+        height: '50%',
+        position: 'absolute',
+        marginLeft: 80,
+        marginTop: 150
+       
     },
 
 

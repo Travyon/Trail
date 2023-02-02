@@ -7,11 +7,18 @@ import styles from "./styles";
 
 const UserLogin = (props) => {
     const{ title = 'Login'} = props;
+    //Will retrieve the email when user is logging in
     const [email, setEmail] = useState('')
+
+    //Will retrieve the password when user is logging in
     const [password, setPassword] = useState('')
+    
+    //Allows for navigation to be used in this component
     const navigation = useNavigation()
     useEffect(()=> {
-     const unsubscribe = auth.onAuthStateChanged(user => {
+    //Authenticates the user
+    const unsubscribe = auth.onAuthStateChanged(user => {
+        //Goes to welcome screen if user is registered
         if (user){
            navigation.navigate('Home')
         }
