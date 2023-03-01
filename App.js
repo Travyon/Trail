@@ -1,12 +1,12 @@
 import { StatusBar } from 'react-native';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import LoginScreen from './components/loginScreen';
-import UserLogin from './components/UserLogin';
-import Home from './components/Home';
-import ZeroBudget from './components/ZeroBudget';
-import PortionBudget from './components/PortionBudget';
-import CreateAccount from './components/CreateAccount';
+import LoginScreen from './src/screens/loginScreen';
+import UserLogin from './src/components/UserLogin';
+import Home from './src/components/Home';
+import ZeroBudget from './src/screens/ZeroBudget';
+import PortionBudget from './src/components/PortionBudget';
+import CreateAccount from './src/components/CreateAccount';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { Provider as PaperProvider } from 'react-native-paper';

@@ -31,5 +31,5 @@ const getDocs = firebase.firestore();
 
 
 
-export { auth, db, collection, getDocs};
+export {auth, db, collection, getDocs};
 
