@@ -1,89 +1,59 @@
-import { StatusBar } from 'expo-status-bar';
+import { StatusBar } from 'react-native';
 import React from 'react';
-import { StyleSheet, Text, View, ImageBackground, TextInput} from 'react-native';
+import LoginScreen from './src/screens/loginScreen';
+import UserLogin from './src/components/UserLogin';
+import Home from './src/screens/Home';
+import ZeroBudget from './src/screens/ZeroBudget';
+import PortionBudget from './src/screens/PortionBudget';
+import CreateAccount from './src/screens/CreateAccount';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { Provider as PaperProvider } from 'react-native-paper';
 
 
-export default function App() {
+
+
+
+const Stack = createNativeStackNavigator();
+
+
+
+const App = () => {
   return (
-    <View style={styles.container}>
+    <PaperProvider>
+      <NavigationContainer>
 
-    
-      <View style={styles.titleContainer}>
-        <ImageBackground 
-          source={require('./assets/Images/Trailback.jpeg')}
-          style={styles.image}
-        />
+        <Stack.Navigator initialRouteName="Login" //This component allows navigation throughout the app
+          screenOptions={{
+            //determines if a header will appear throughout the app
+            headerShown: false,
+            header: () => null,
+            contentStyle: { backgroundColor: 'white' },
+          }}>
 
-        <View style={styles.titles}>
-         <Text style={styles.title}>Trail</Text>
-         <Text style={styles.subtitle}>Your path to financial responsibility</Text>
-        </View>
-
-        <View style={styles.textAreaContainer} >
-          <TextInput
-            style={styles.textArea}
+          <Stack.Screen name="Login" component={LoginScreen} //Where the register and login buttons pressed
           />
-        </View>
+          <Stack.Screen name="Register" component={CreateAccount} //App navigates to the screen where an account is created
+          />
+          <Stack.Screen name="Userlogin" component={UserLogin} //When login button is pressed, the app navigates to login screen 
+          />
+          <Stack.Screen name="Home" component={Home} //Welcome screen
+          />
+
+          <Stack.Screen name="ZeroBudget" component={ZeroBudget} //Zero-Based Budget Screen 
+          />
+          <Stack.Screen name="PortionBudget" component={PortionBudget} // 50/30/20 Budget Screen
+          />
+        </Stack.Navigator>
+
+      </NavigationContainer>
 
 
+    </PaperProvider>
 
-
-      </View>
-
-    </View>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-
-  titleContainer:{
-    width: '100%',
-    height: '100%'
-  },
-  
-  titles: {
-    marginTop:'30%',
-    width:'100%',
-    alignItems: 'center'
-  },
-  title:{
-    fontSize: '40px',
-    fontWeight: '700',
-    color: '#FFFFFF'
-  },
-  subtitle:{
-    fontSize: '16px',
-    color: '#FFFFFF'
-  },
-
-  image:{
-    width: '100%',
-    height: '100%',
-    resizeMode: 'contain',
-    position: 'absolute'
-  },
-  textAreaContainer: {
-    borderColor: '#FFFFFF',
-    borderWidth: 5,
-    padding: 1,
-    marginRight: 50,
-    marginLeft: 50,
-    marginTop: 300
-    
-  },
-  textArea: {
-    height: 50,
-    justifyContent: 'absolute',
-    backgroundColor: '#FFFFFF'
-
-    
-  }
+export default App;
 
 
-});
