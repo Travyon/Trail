@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Pressable, View, Text, TextInput } from 'react-native';
 import styles from "./styles";
-import { auth } from "../../../firebase";
+import { auth } from "../../../../firebase";
 
 const CreateAccount = (props) => {
     const [email, setEmail] = useState("");

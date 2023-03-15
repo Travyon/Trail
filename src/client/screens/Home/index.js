@@ -17,7 +17,7 @@ const Home = (props) =>{
         <View style={styles.titleContainer} >
         <ImageBackground 
             //The background image of the welcome screen
-            source={require('../../../assets/Images/Trailback.jpeg')}
+            source={require('../../../../assets/Images/Trailback.jpeg')}
             style={styles.image}
             blurRadius={100}
           />

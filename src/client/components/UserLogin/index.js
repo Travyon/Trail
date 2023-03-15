@@ -1,7 +1,7 @@
 import React, {ReactElement, useEffect, useState}from "react";
 import {Pressable, View ,Text, TextInput} from 'react-native';
 import { useNavigation } from '@react-navigation/native'
-import { auth } from "../../../firebase";
+import { auth } from "../../../../firebase";
 import styles from "./styles";
 
 

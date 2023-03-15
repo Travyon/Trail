@@ -12,7 +12,7 @@ const LoginScreen = (props) => {
   return (
     <View style={styles.titleContainer}>
       <ImageBackground
-            source={require('../../../assets/Images/TrailLogo.jpeg')}
+            source={require('../../../../assets/Images/TrailLogo.jpeg')}
         style={styles.image}
       />
 
