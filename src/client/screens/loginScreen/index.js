@@ -28,9 +28,6 @@ const LoginScreen = (props) => {
         content={"Login"}
         onPress={() => navigation.navigate('Userlogin')}
       />
-
-
-
     </View>
   );
 }

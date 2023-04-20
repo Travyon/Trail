@@ -3,7 +3,6 @@ import {View, Text, TouchableOpacity, TextInput, ImageBackground} from 'react-na
 import styles from './styles';
 import { useNavigation } from "@react-navigation/native";
 import { Button } from "react-native-paper";
-import LinearGradient from 'react-native-linear-gradient';
 
 
 
